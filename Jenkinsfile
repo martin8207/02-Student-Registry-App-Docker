@@ -8,17 +8,19 @@ pipeline {
             }
         }
 
-        stage('Run Test') {
-            steps {
-                // Run tests
-                bat 'npm test'
-            }
-        }
+       
         
         stage('Run Audit') {
             steps {
                 // Run tests
                 bat 'npm audit'
+            }
+        }
+
+        stage('Run Test') {
+            steps {
+                // Run tests
+                bat 'npm test'
             }
         }
          /*  stage('Build') {
