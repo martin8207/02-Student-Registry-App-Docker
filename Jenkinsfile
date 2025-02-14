@@ -26,7 +26,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the application
-                  bat 'Hellow World'   
+                  echo 'Hellow World'   
             }
         }
 
