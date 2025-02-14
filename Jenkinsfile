@@ -15,7 +15,12 @@ pipeline {
             }
         }
         
-
+        stage('Run Audit') {
+            steps {
+                // Run tests
+                bat 'npm audit'
+            }
+        }
          /*  stage('Build') {
             steps {
                 // Build the application
