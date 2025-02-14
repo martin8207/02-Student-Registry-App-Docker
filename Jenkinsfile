@@ -1,13 +1,6 @@
 pipeline {
     agent any
     stages {
-       /* stage('Checkout') {
-            steps {
-                // Get code from GitHub repository
-                checkout scm
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 // Install npm dependencies
@@ -15,22 +8,22 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Run Test') {
             steps {
                 // Run tests
                 bat 'npm test'
             }
         }
-        */
+        
 
-        stage('Build') {
+         /*  stage('Build') {
             steps {
                 // Build the application
                   echo 'Hellow World'   
             }
         }
 
-     /*  stage('Deploy') {
+    stage('Deploy') {
             steps {
                 // Add deployment steps here
                 bat 'echo Deploying the application...'
