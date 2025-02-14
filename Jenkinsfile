@@ -32,6 +32,9 @@ pipeline {
 
         stage('Deploy') {
             steps {
+                // Manual approval before deployment
+                input message: 'Proceed with deployment?'
+                
                 // Add deployment steps here
                 echo 'echo Deploying the application...'
             }
