@@ -28,13 +28,13 @@ pipeline {
                 // Build the application
                   echo 'Hellow World'   
             }
-        }
+        }*/
 
-    stage('Deploy') {
+        stage('Deploy') {
             steps {
                 // Add deployment steps here
-                bat 'echo Deploying the application...'
+                echo 'echo Deploying the application...'
             }
-        } */ 
+        }  
     }
 }
